@@ -1,4 +1,4 @@
-body {
+/* body {
   background-color: #6C757D;
 }
 
@@ -16,8 +16,8 @@ body {
   padding: 3rem; 
   margin: 2rem;
   box-sizing: border-box; /* Pour inclure le padding dans la largeur */
-  text-align: center; 
-  color: #fff;
+  /* text-align: center;  */
+  /* color: #fff;
 }
 
 
@@ -58,4 +58,81 @@ body {
       width: 100%; 
       margin: 1rem; 
   }
+/* } */ 
+
+
+body {
+  background-color: #6C757D;
 }
+
+#infos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 30%;
+  margin: 1%;
+  background-color: #212529;
+  border: 10px solid #fff;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+}
+
+.card img {
+  width: 88%; 
+  height: 15em; 
+  
+}
+
+.card h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+}
+
+#logo {
+  width: 15rem;
+  height: 6rem;
+}
+
+
+.card li {
+  font-size: 22px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  
+
+}
+
+/* Media query pour les écrans de largeur inférieure à 768px */
+@media screen and (max-width: 768px) {
+  .card {
+      width: 45%;
+  }
+  .card h2 {
+      font-size: 1.8rem;
+  }
+  .card li {
+      font-size: 16px;
+  }
+}
+
+/* Media query pour les écrans de largeur inférieure à 480px */
+@media screen and (max-width: 480px) {
+  .card {
+      width: 100%;
+      margin: 2% 0;
+      padding: 1rem;
+  }
+  .card h2 {
+      font-size: 1.6rem;
+  }
+  .card li {
+      font-size: 14px;
+  }
+}
+
